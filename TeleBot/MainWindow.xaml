@@ -1,0 +1,25 @@
+﻿<Window x:Class="TeleBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeleBot"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50 px"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="50 px"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50 px"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="50 px"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="ConsoleBox" Grid.Row="1" Grid.ColumnSpan="3" Background="#FF191919"  Foreground="#FF006EC9" TextWrapping="Wrap" Margin="5"/>
+        <Button x:Name="btnStartBot" Grid.Row="3" Grid.Column="1" Width="200" Height="40" Content="Start bot" Click="StartBotClick"/>
+        <Button x:Name="btnSettings" Grid.Row="3" Grid.Column="2" Margin="0,0,5,5" Click="BtnSettings_Click"/>
+    </Grid>
+
+</Window>
